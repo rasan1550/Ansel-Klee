@@ -149,70 +149,70 @@ if(viewportWidth < 1200){
     })
 }
 // ====================== Reveal About ======================
-// let arrAbout = ['.about__handle', '.about__content']
-// arrAbout.forEach((element, index) => {
-//     if(index % 2 === 0){
-//         srElement(element)
-//     }else{
-//         srElement(element, {origin : 'right'})
-//     }
-//     // =========== (viewport Width < 992) ===========
-//     if(viewportWidth < 992){
-//         srElement(element, {origin : 'top', delay : 400 + (index * 300)})
-//     }
-// })
+let arrAbout = ['.about__handle', '.about__content']
+arrAbout.forEach((element, index) => {
+    if(index % 2 === 0){
+        srElement(element)
+    }else{
+        srElement(element, {origin : 'right'})
+    }
+    // =========== (viewport Width < 992) ===========
+    if(viewportWidth < 992){
+        srElement(element, {origin : 'top', delay : 400 + (index * 300)})
+    }
+})
 // ====================== Reveal Skills ======================
-// let skillsContentAll = document.querySelectorAll('.skills__content')
-// skillsContentAll.forEach((element, index) => {
-//     if(index % 2 === 0){
-//         srElement(element)
-//     }else{
-//         srElement(element, {origin : 'right'})
-//     }
-//     // =========== (viewport Width < 992) ===========
-//     if(viewportWidth < 992){
-//         srElement(element, {origin : 'top', delay : 400 + (index * 300)})
-//     }
-// })
+let skillsContentAll = document.querySelectorAll('.skills__content')
+skillsContentAll.forEach((element, index) => {
+    if(index % 2 === 0){
+        srElement(element)
+    }else{
+        srElement(element, {origin : 'right'})
+    }
+    // =========== (viewport Width < 992) ===========
+    if(viewportWidth < 992){
+        srElement(element, {origin : 'top', delay : 400 + (index * 300)})
+    }
+})
 // ====================== Reveal Services ======================
-// let servicesCard = document.querySelectorAll('.services__card')
-// servicesCard.forEach((element, index) => {
-//     srElement(element, {delay : 400 + (index * 300)})
-//     // =========== (viewport Width < 320) ===========
-//     if(viewportWidth <= 320){
-//         srElement(element, {origin : 'top', delay : 400 + (index * 300)})
-//     }
-// })
+let servicesCard = document.querySelectorAll('.services__card')
+servicesCard.forEach((element, index) => {
+    srElement(element, {delay : 400 + (index * 300)})
+    // =========== (viewport Width < 320) ===========
+    if(viewportWidth <= 320){
+        srElement(element, {origin : 'top', delay : 400 + (index * 300)})
+    }
+})
 // ====================== Reveal Work ======================
-// const workCard = document.querySelectorAll('.work__card')
-// workCard.forEach((element, index) => {
-//     srElement(element, {origin : 'top', delay : 400 + (index * 300)})
-//     // =========== (viewport Width >= 768 && viewport Width < 1200) ===========
-//     if(viewportWidth >= 768 && viewportWidth < 1200){
-//         if(index % 2 === 0){
-//             srElement(element, {origin : 'left'})
-//         }else{
-//             srElement(element, {origin : 'right'})
-//         }
-//     }
+const workCard = document.querySelectorAll('.work__card')
+workCard.forEach((element, index) => {
+    srElement(element, {origin : 'top', delay : 400 + (index * 300)})
+    // =========== (viewport Width >= 768 && viewport Width < 1200) ===========
+    if(viewportWidth >= 768 && viewportWidth < 1200){
+        if(index % 2 === 0){
+            srElement(element, {origin : 'left'})
+        }else{
+            srElement(element, {origin : 'right'})
+        }
+    }
     
-// })
+})
 // ====================== Reveal Testimonial ======================
-// srElement('.testimonial__container', {origin : 'top'})
+srElement('.testimonial__container', {origin : 'top'})
 // ====================== Reveal Contact ======================
-// let contactContent = document.querySelectorAll('.contact__content')
-// contactContent.forEach((element, index) => {
-//     if(index % 2 === 0){
-//         srElement(element)
-//     }else{
-//         srElement(element, {origin : 'right'})
-//     }
-//     if(viewportWidth <= 992){
-//         srElement(element, {origin : 'top', delay : 400 + (index * 300)})
-//     }
-// })
+let contactContent = document.querySelectorAll('.contact__content')
+contactContent.forEach((element, index) => {
+    if(index % 2 === 0){
+        srElement(element)
+    }else{
+        srElement(element, {origin : 'right'})
+    }
+    if(viewportWidth <= 992){
+        srElement(element, {origin : 'top', delay : 400 + (index * 300)})
+    }
+})
 // ====================== Reveal Footer ======================
-// let footerElement = document.querySelector('.footer__container').querySelectorAll('h1, ul, span')
-// footerElement.forEach((element, index) => {
-//     srElement(element, {origin : 'bottom', delay : 400 + (index * 100)})
-// })
+let footerElement = document.querySelector('.footer__container').querySelectorAll('h1, ul, span')
+footerElement.forEach((element, index) => {
+    srElement(element, {origin : 'bottom', delay : 400 + (index * 100)})
+})
