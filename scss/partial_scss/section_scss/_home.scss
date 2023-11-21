@@ -3,7 +3,7 @@
         position: relative;
         row-gap: 4.5rem;
         padding-top: 2rem;
-        @include breakpoint-up(x-large){
+        @include breakpoint-up(large){
             grid-template-columns: repeat(2, max-content);
             justify-content: center;
             align-items: center;
