@@ -2,16 +2,13 @@
     &__container{
         row-gap: 3rem;
         padding-bottom: 3rem;
-        @include breakpoint-down(medium){
+        @include breakpoint-down(x-small){
             grid-template-columns: 1fr;
         }
         @include breakpoint-up(large){
             grid-template-columns: repeat(2, max-content);
             column-gap: 4rem;
             justify-content: center;
-        }
-        @include breakpoint-up(x-large){
-            
         }
     }
     &__title{
